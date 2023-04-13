@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="yandex-verification" content="2f115ae3132cb5cc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Личный кабинет</title>
+    <meta name="description" content="Личный кабинет" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8.2.4/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.07.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(89296199, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/89296199"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-50HWSC8D35"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-50HWSC8D35");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <!-- logo -->
+          <a href="/ " class="header__logo">
+            <img
+              loading="lazy"
+              class="header__logo-img"
+              alt="Логотип"
+              src="img/logo.svg"
+            />
+          </a>
+          <!-- burger -->
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- navigation -->
+          <nav class="header__menu">
+            <!-- header__list -->
+            <div class="main-menu">
+              <h3 class="main-menu__title">Меню</h3>
+              <div class="header__list">
+                <ul class="main-menu__list">
+                  <li class="main-menu__li">
+                    <a href="/" class="header__link link-hover"> Услуги </a>
+                  </li>
+                  <li class="main-menu__li">
+                    <a href="#price" class="header__link link-hover"> Цены </a>
+                  </li>
+                  <li class="main-menu__li">
+                    <a href="/b2b" class="header__link link-hover">
+                      Сотрудничество
+                    </a>
+                  </li>
+                  <li class="main-menu__li dropdown">
+                    <a data-toggle="dropdown" class="dropdown-link link-hover">
+                      О нас
+                      <i class="drop-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-menu__li">
+                        <a class="dropdown-menu__link" href="#portfolio"
+                          >Фото работ</a
+                        >
+                      </li>
+                      <li class="dropdown-menu__li">
+                        <a class="dropdown-menu__link" href="#garant"
+                          >Гарантии</a
+                        >
+                      </li>
+                      <li class="dropdown-menu__li">
+                        <a class="dropdown-menu__link" href="#contacts"
+                          >Контакты</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="main-menu__contacts-mob">
+                  <button
+                    type="button"
+                    class="main-btn"
+                    data-fancybox
+                    data-src="#main-popup"
+                  >
+                    <span class="main-btn__icon-wrapper">
+                      <img
+                        loading="lazy"
+                        class="main-btn__icon"
+                        src="img/icons/phone-white.svg"
+                        width="24"
+                        height="24"
+                        alt="телефон"
+                      />
+                    </span>
+                    <span class="main-btn__txt-wrapper">
+                      <span class="main-btn__txt"> заказать звонок </span>
+                    </span>
+                  </button>
+                  <div class="main-menu__contacts-mob-phone">
+                    Бесплатный звонок
+                    <a
+                      class="main-menu__contacts-mob-num"
+                      href="tel:8-495-145-78-88"
+                    >
+                      8-495-145-78-88
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- callback -->
+          <div class="header__callback">
+            <a data-fancybox data-src="#main-popup" class="btn-callback"
+              >Заказать звонок</a
+            >
+            <div class="header__phone-wrap">
+              <span class="header__phone-span">Бесплатный звонок</span>
+              <a class="header__phone-link" href="tel:8-495-145-78-88">
+                <span class="header__phone-txt">8-495-145-78-88</span>
+              </a>
+            </div>
+          </div>
+          <button
+            data-fancybox
+            data-src="#main-popup-reg"
+            type="button"
+            class="header__login-wrapper"
+          >
+            <span class="header__login-txt"> Войти </span>
+            <img
+              loading="lazy"
+              class="header__login-icon"
+              width="36"
+              height="36"
+              src="img/icons/user.svg"
+              alt="юзер"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="person">
+        <div class="container">
+          <div class="person__inner">
+            <div class="person__inform">
+              <div class="person__data">
+                <div class="data__content">
+                  <div class="data__photo">
+                    <a href="">ИЗМЕНИТЬ ФОТО</a>
+                  </div>
+                  <div class="data__contact">
+                    <a data-fancybox href="#main-popup-set" class="data__fio"
+                      >Фамилия Имя Отчество</a
+                    >
+                    <div class="data__phone">
+                      <span>Телефон:</span>
+                      <span>8 925 000 00 00</span>
+                    </div>
+                    <div class="data__company">
+                      <span>Компания:</span>
+                      <span>ООО “Компания”</span>
+                    </div>
+                    <div class="data__email">
+                      <span>Почта:</span>
+                      <span>info@компания.ru</span>
+                    </div>
+                    <div class="data__adress">
+                      <span>Адрес:</span>
+                      <span>г.Москва, ул Павелецкая д2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="person__balance">
+                <div class="balance__inner">
+                  <div class="balance__title">
+                    <p>Баланс</p>
+                  </div>
+                  <div class="balance__orders">
+                    <p>
+                      <span>заказов выполнено:</span>
+                      <span>100</span>
+                    </p>
+                  </div>
+                  <div class="balance__sum">
+                    <span>Сумма к выплате:</span>
+                    <span>24356₽</span>
+                  </div>
+                  <div class="balance__payment">
+                    <span>Выплачено:</span>
+                    <span>102300₽</span>
+                  </div>
+                  <div class="balance__date">
+                    <span>с 08.08.2022</span>
+                    <span>по 10.10.2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="person__orders">
+              <h1 class="orders__title">Заказы</h1>
+              <nav class="orders__nav">
+                <ul class="orders__list">
+                  <li class="orders__link1">
+                    <a href="#">ЗАМЕР</a>
+                  </li>
+                  <li class="orders__link2">
+                    <a href="#">УСТАНОВКА</a>
+                  </li>
+                  <li class="orders__link3">
+                    <a href="#">ДОСТАВКА</a>
+                  </li>
+                  <li class="orders__link4">
+                    <a href="#">ДРУГАЯ УСЛУГА</a>
+                  </li>
+                  <li class="orders__link5">
+                    <a href="#">РЕКЛАМАЦИЯ</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="orders__buttons">
+                <div class="orders__search-box">
+                  <input
+                    type="text"
+                    class="orders__search-txt"
+                    placeholder="ПОИСК"
+                  />
+                  <a
+                    href="#"
+                    class="orders__search-btn fa-solid fa-magnifying-glass"
+                  >
+                  </a>
+                </div>
+                <div class="orders__btn1">
+                  <a data-fancybox href="#main-popup-radio"
+                    >создать новый заказ</a
+                  >
+                </div>
+                <div class="orders__select-1">
+                  <div class="orders__select-fake-2">
+                    <select name="select-category-1" class="orders__btn3">
+                      <option value="1">Все заказы</option>
+
+                      <option value="2">Активные</option>
+
+                      <option value="3">Завершенные</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="orders__select-3">
+                  <div class="orders__select-fake">
+                    <select name="select-category-3" class="orders__btn5">
+                      <option value="1">Январь</option>
+
+                      <option value="2">Февраль</option>
+
+                      <option value="3">Март</option>
+
+                      <option value="4">Апрель</option>
+
+                      <option value="5">Май</option>
+
+                      <option value="6">Июнь</option>
+
+                      <option value="7">Июль</option>
+
+                      <option value="8">Август</option>
+
+                      <option value="9">Сентябрь</option>
+
+                      <option value="10">Октябрь</option>
+
+                      <option value="11">Ноябрь</option>
+
+                      <option value="12">Декабрь</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="orders__select-4">
+                  <div class="orders__select-fake">
+                    <select name="select-category-4" class="orders__btn6">
+                      <option value="1">Январь</option>
+
+                      <option value="2">Февраль</option>
+
+                      <option value="3">Март</option>
+
+                      <option value="4">Апрель</option>
+
+                      <option value="5">Май</option>
+
+                      <option value="6">Июнь</option>
+
+                      <option value="7">Июль</option>
+
+                      <option value="8">Август</option>
+
+                      <option value="9">Сентябрь</option>
+
+                      <option value="10">Октябрь</option>
+
+                      <option value="11">Ноябрь</option>
+
+                      <option value="12">Декабрь</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="orders__select-2">
+                  <div class="orders__select-fake-1">
+                    <select name="select-category-2" class="orders__btn4">
+                      <option value="1">2022г</option>
+
+                      <option value="2">2021г</option>
+
+                      <option value="3">2020г</option>
+
+                      <option value="4">2019г</option>
+
+                      <option value="5">2018г</option>
+
+                      <option value="6">2017г</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="orders__btn2">
+                  <a href="allOrders.html">все заказы</a>
+                </div>
+              </div>
+              <div class="orders__table">
+                <div class="orders__grid-body">
+                  <div class="orders__grid-item">Тариф</div>
+                  <div class="orders__grid-item">ФИО</div>
+                  <div class="orders__grid-item">Адрес клиента</div>
+                  <div class="orders__grid-item">Телефон</div>
+                  <div class="orders__grid-item">Номер замера</div>
+                  <div class="orders__grid-item">Кол-во дверей</div>
+                  <div class="orders__grid-item">Комментарий</div>
+                  <div class="orders__grid-item">-</div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">Пример заказа</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                  <div class="orders__grid-item">
+                    <a href="order.html">-</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="person__foot">
+          <nav class="foot__nav">
+            <a href="personal_account.html" class="foot__profile">Профиль</a>
+            <a href="allOrders.html" class="foot__orders">Заказы</a>
+            <a data-fancybox href="#main-popup-radio" class="foot__create"
+              >Создать</a
+            >
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__lines">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__item">
+              <a href="/">
+                <img
+                  loading="lazy"
+                  class="footer__logo"
+                  src="img/logo.svg"
+                  alt="логотип"
+                />
+              </a>
+              <span class="footer__times"> Пн-Сб 9:00 — 19:00 </span>
+              <span class="footer__times"> Вс — выходной</span>
+            </div>
+            <div class="footer__item">
+              <span class="footer__txt"> ИП Кравцов Павел Владимирович </span>
+              <span class="footer__txt"> ИНН 272591542507 </span>
+              <span class="footer__txt"> ОГРНИП 317272400018503 </span>
+              <a data-fancybox data-src="#offerta" class="footer__offer">
+                Не является публичной офертой
+              </a>
+            </div>
+            <div class="footer__item">
+              <a
+                class="footer__link footer__link_phone"
+                href="tel:8-495-145-78-88"
+              >
+                <span> 8-495-145-78-88 </span>
+              </a>
+              <a
+                class="footer__link footer__link_mail"
+                href="mailto:info@urovenservisa.ru"
+              >
+                <span> info@urovenservisa.ru </span>
+              </a>
+              <a class="footer__link footer__link_geo">
+                <span> Егорьевский проезд, 2Ас7 , офисы: 20, 21 и 23 </span>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__link footer__link_tg">
+                <span> TELEGRAM </span>
+              </a>
+              <a
+                href="https://wa.clck.bar/79524728646"
+                target="_blank"
+                class="footer__link footer__link_wa"
+              >
+                <span> WHATSAPP </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="footer-rights">
+          Уровень Сервиса. Установка и замер межкомнатных дверей. Все права
+          защищены ©2013-2022
+        </p>
+      </div>
+    </footer>
+
+    <!-- popups -->
+
+    <div id="main-popup" class="main-popup">
+      <form
+        method="POST"
+        onsubmit="send(event, 'send.php')"
+        class="main-form"
+        enctype="multipart/form-data"
+      >
+        <h3 class="main-form__title">Форма обратной связи</h3>
+        <span class="main-form__sub-title">
+          Укажите все данные для обратной связи
+        </span>
+        <div class="main-form__body">
+          <div class="main-form__item">
+            <span class="main-form__input-descr">имя</span>
+            <input
+              class="main-form__input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+          </div>
+          <div class="main-form__item">
+            <span class="main-form__input-descr">ваш телефон</span>
+            <input
+              class="main-form__input"
+              type="text"
+              name="phone"
+              placeholder="+7 (---) --- -- --"
+              maxlength="12"
+              required
+            />
+          </div>
+          <div class="main-form__item">
+            <span class="main-form__input-descr">электронная почта</span>
+            <input
+              class="main-form__input"
+              type="text"
+              name="email"
+              placeholder="@"
+              required
+            />
+          </div>
+          <div class="main-form__item">
+            <span class="main-form__input-descr">комментарий</span>
+            <textarea
+              class="main-form__txtarea"
+              placeholder="Текст комментария"
+              name="msg"
+            ></textarea>
+          </div>
+          <div class="main-form__item main-form__item_btn">
+            <button type="submit" class="main-btn">
+              <span class="main-btn__icon-wrapper">
+                <img
+                  loading="lazy"
+                  class="main-btn__icon"
+                  src="img/icons/support.svg"
+                  width="24"
+                  height="24"
+                  alt="телефон"
+                />
+              </span>
+              <span class="main-btn__txt-wrapper">
+                <span class="main-btn__txt"> отправить данные </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="main-popup-reg" class="main-popup">
+      <div class="mobile">
+        <div class="mobile__wrap">
+          <button class="mobile__BTNtext black">Регистрацияя</button>
+          <button class="mobile__BTNtext two">Авторизация</button>
+        </div>
+
+        <form action="" class="request__form-mobile active">
+          <input type="email" class="request__input" placeholder="Почта" />
+          <input
+            type="tel"
+            name="phone"
+            class="request__input request__tel"
+            placeholder="Телефон"
+            required
+            maxlength="17"
+            id="inp"
+          />
+          <input
+            type="password"
+            class="request__input"
+            placeholder="Придумайте пароль"
+          />
+          <input
+            type="password"
+            class="request__input"
+            placeholder="Повторите пароль"
+          />
+          <div class="request__btt-inner">
+            <a href="personal_account.html" class="request__btn"
+              >ЗАРЕГИСТРИРОВАТЬСЯ</a
+            >
+          </div>
+        </form>
+        <form action="" class="request__form-mobile two">
+          <input type="email" class="request__input" placeholder="Почта" />
+          <input
+            type="tel"
+            name="phone"
+            class="request__input request__tel-2"
+            placeholder="Телефон(не обяз)"
+            required
+            maxlength="17"
+            id="inp1"
+          />
+          <input type="password" class="request__input" placeholder="Пароль" />
+          <div class="request__btt-inner">
+            <a href="personal_account.html" class="request__btn-2"
+              >АВТОРИЗИРОВАТЬСЯ</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="offerta" class="thanks-popup">
+      <div class="thanks-popup__body">
+        <h3 class="thanks-popup__title">Не является публичной офертой</h3>
+        <p class="thanks-popup__p">
+          Окончательная стоимость всегда определяется специалистом на месте до
+          начала проведения работ. <br /><br />
+
+          ВНИМАНИЕ: Общестроительные, штукатурно-малярные, электромонтажные
+          работы, включая перенос электропроводки и заделку полов, не
+          производятся! <br /><br />
+
+          Вся размещённая на сайте информация, в том числе информация об услугах
+          и их стоимости, описание процессов и изображения, носит исключительно
+          информационный характер и не является договором публичной оферты.
+          <br /><br />
+
+          Убедительная просьба для уточнения стоимости услуг, наличия, цвета и
+          иных характеристик товаров обращаться к консультанту (менеджеру).
+        </p>
+        <a class="thanks-popup__btn popup-close">Закрыть</a>
+      </div>
+    </div>
+
+    <div id="main-popup-set" class="main-popup">
+      <div class="set__wrap">
+        <div class="set__content">
+          <div class="set__title">Настройки</div>
+          <div class="set__fio">Фамилия Имя Отчество</div>
+          <div class="set__tel set-marker">
+            <span>Телефон:</span>
+            <a href=""> 8 925 000 00 00</a>
+          </div>
+          <div class="set__dop-tel set-marker">
+            <span>Доп.Тел:</span>
+            <a href="">8 925 000 00 00</a>
+          </div>
+          <div class="set__company set-marker">
+            <span>Компания:</span>
+            <a href="">ООО "Компания"</a>
+          </div>
+          <div class="set__email set-marker">
+            <span>Почта:</span>
+            <a href="">info@company.ru</a>
+          </div>
+          <div class="set__adress set-marker">
+            <span>Адрес:</span>
+            <a href="">г.Москва, ул Павелецкая д2</a>
+          </div>
+          <div class="set__password">
+            <span>Пароль:</span>
+            <input
+              type="password"
+              class="request__input-set"
+              placeholder="Введите пароль для внесения изменений"
+            />
+          </div>
+          <div class="set__forget">
+            <a data-fancybox href="#main-popup-check">Забыли пароль?</a>
+          </div>
+          <div class="set__input-e">
+            <input
+              type="email"
+              class="request__input-set-email"
+              placeholder="Введите вашу почту"
+            />
+          </div>
+          <div class="request__btt-inner-set">
+            <button class="request__btn-2-set">Отправить изменения</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-check" class="main-popup">
+      <div class="check__content">
+        <p class="check__text">
+          Информация для смены пароля отправлена на вашу почту
+        </p>
+      </div>
+    </div>
+
+    <div id="main-popup-radio" class="main-popup">
+      <div class="radio__wrap">
+        <div class="radio__content">
+          <div class="radio__title">Создать новый заказ</div>
+          <ul class="radio__list">
+            <li class="radio__btn">
+              <label>
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="order"
+                  value="zamer"
+                />
+                <span class="radio__fake"></span>
+                <span class="radio__text">Замер</span>
+              </label>
+            </li>
+            <li class="radio__btn">
+              <label>
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="order"
+                  value="install"
+                />
+                <span class="radio__fake"></span>
+                <span class="radio__text">Установка</span>
+              </label>
+            </li>
+            <li class="radio__btn">
+              <label>
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="order"
+                  value="delivery"
+                />
+                <span class="radio__fake"></span>
+                <span class="radio__text">Доставка</span>
+              </label>
+            </li>
+            <li class="radio__btn">
+              <label>
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="order"
+                  value="other-service"
+                />
+                <span class="radio__fake"></span>
+                <span class="radio__text">Другая услуга</span>
+              </label>
+            </li>
+            <li class="radio__btn">
+              <label>
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="order"
+                  value="complaint"
+                />
+                <span class="radio__fake"></span>
+                <span class="radio__text">Рекламация</span>
+              </label>
+            </li>
+          </ul>
+          <div class="radio__next">
+            <a data-fancybox href="">Далее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-create-zamer" class="main-popup">
+      <div class="create__wrap">
+        <div class="create">
+          <div class="create__title">
+            <p>Создание заказа</p>
+            <p>Замер</p>
+          </div>
+
+          <form action="" class="create__inner active">
+            <input
+              type="text"
+              class="create__input"
+              placeholder="ФИО клиента"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Адрес клиента"
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="create__input request__tel-3"
+              placeholder="Телефон клиента"
+              required
+              maxlength="17"
+              id="inp3"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Кол-во проемов"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Комментарий"
+            />
+            <input type="file" id="file" name="file" multiple />
+            <label for="file" class="create__input create__cursor"
+              >Прикрепить файл</label
+            >
+            <div class="create__btt-inner">
+              <button class="create__btn">СОЗДАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-create-install" class="main-popup">
+      <div class="create__wrap">
+        <div class="create">
+          <div class="create__title">
+            <p>Создание заказа</p>
+            <p>Установка</p>
+          </div>
+
+          <form action="" class="create__inner active">
+            <input
+              type="text"
+              class="create__input"
+              placeholder="ФИО клиента"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Адрес клиента"
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="create__input request__tel-4"
+              placeholder="Телефон клиента"
+              required
+              maxlength="17"
+              id="inp3"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Кол-во дверей"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Комментарий"
+            />
+            <input type="file" id="file" name="file" multiple />
+            <label for="file" class="create__input create__cursor"
+              >Прикрепить файл</label
+            >
+            <div class="create__btt-inner">
+              <button class="create__btn">СОЗДАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-create-delivery" class="main-popup">
+      <div class="create__wrap">
+        <div class="create">
+          <div class="create__title">
+            <p>Создание заказа</p>
+            <p>Доставка</p>
+          </div>
+
+          <form action="" class="create__inner active">
+            <input
+              type="text"
+              class="create__input"
+              placeholder="ФИО клиента"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Адрес клиента"
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="create__input request__tel-5"
+              placeholder="Телефон клиента"
+              required
+              maxlength="17"
+              id="inp3"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Кол-во полотен"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Комментарий"
+            />
+            <input type="file" id="file" name="file" multiple />
+            <label for="file" class="create__input create__cursor"
+              >Прикрепить файл</label
+            >
+            <div class="create__btt-inner">
+              <button class="create__btn">СОЗДАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-create-other-service" class="main-popup">
+      <div class="create__wrap">
+        <div class="create">
+          <div class="create__title">
+            <p>Создание заказа</p>
+            <p>Другая услуга</p>
+          </div>
+
+          <form action="" class="create__inner active">
+            <input
+              type="text"
+              class="create__input"
+              placeholder="ФИО клиента"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Адрес клиента"
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="create__input request__tel-6"
+              placeholder="Телефон клиента"
+              required
+              maxlength="17"
+              id="inp3"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Кол-во изделий"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Комментарий"
+            />
+            <input type="file" id="file" name="file" multiple />
+            <label for="file" class="create__input create__cursor"
+              >Прикрепить файл</label
+            >
+            <div class="create__btt-inner">
+              <button class="create__btn">СОЗДАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-popup-create-complaint" class="main-popup">
+      <div class="create__wrap">
+        <div class="create">
+          <div class="create__title">
+            <p>Создание заказа</p>
+            <p>Рекламация</p>
+          </div>
+
+          <form action="" class="create__inner active">
+            <input
+              type="text"
+              class="create__input"
+              placeholder="ФИО клиента"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Адрес клиента"
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="create__input request__tel-7"
+              placeholder="Телефон клиента"
+              required
+              maxlength="17"
+              id="inp3"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Дата обнаружения недостатков"
+            />
+            <input
+              type="text"
+              class="create__input"
+              placeholder="Комментарий"
+            />
+            <input type="file" id="file" name="file" multiple />
+            <label for="file" class="create__input create__cursor"
+              >Прикрепить файл</label
+            >
+            <div class="create__btt-inner">
+              <button class="create__btn">СОЗДАТЬ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script async src="js/lazy.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      async
+      id="ymap_lazy"
+      data-src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4c799cb2f6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.06.js"></script>
+  </body>
+  <script>
+    // Отправка данных на сервер
+    function send(event, php) {
+      console.log("Отправка запроса");
+      event.preventDefault
+        ? event.preventDefault()
+        : (event.returnValue = false);
+      var req = new XMLHttpRequest();
+      req.open("POST", php, true);
+      req.onload = function () {
+        if (req.status >= 200 && req.status < 400) {
+          json = JSON.parse(this.response); //  internet explorer 11
+          console.log(json);
+
+          // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+          if (json.result == "success") {
+            // Если сообщение отправлено
+
+            $.fancybox.open(
+              '<div class="message" style="padding:20px;border-radius:8px"><h3 class="message__h3">Спасибо за заявку!</h3><p class="message__p">Мы свяжемся с вами в ближайшее время</p></div>'
+            );
+
+            function closePopup() {
+              $.fancybox.close();
+              $.fancybox.close();
+            }
+
+            setTimeout(closePopup, 3000);
+          } else {
+            // Если произошла ошибка
+            alert("Ошибка. Сообщение не отправлено");
+          }
+          // Если не удалось связаться с php файлом
+        } else {
+          alert("Ошибка сервера. Номер: " + req.status);
+        }
+      };
+
+      // Если не удалось отправить запрос. Стоит блок на хостинге
+      req.onerror = function () {
+        alert("Ошибка отправки запроса");
+      };
+      req.send(new FormData(event.target));
+    }
+  </script>
+</html>
